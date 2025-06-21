@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/home/cthulhu'
+let g:netrw_dirhist_1='/home/cthulhu/.config/nvim'
+let g:netrw_dirhist_0='/home/cthulhu/.config/nvim/lua/jaka'
+let g:netrw_dirhist_9='/home/cthulhu/.config/nvim/lua'
+let g:netrw_dirhist_8='/home/cthulhu/.config/nvim'
+let g:netrw_dirhist_7='/home/cthulhu/.config/nvim/lua/jaka'
+let g:netrw_dirhist_6='/home/cthulhu/.config/nvim/lua'
+let g:netrw_dirhist_5='/home/cthulhu/.config/nvim'
+let g:netrw_dirhist_4='/home/cthulhu/WEB/public_html'
+let g:netrw_dirhist_3='/home/cthulhu/WEB/public_html/img'
