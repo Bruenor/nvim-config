@@ -1,0 +1,3 @@
+# CONFIG V PISARNI
+
+haha
