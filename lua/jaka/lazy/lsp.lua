@@ -4,6 +4,19 @@ return {
         { "mason-org/mason.nvim", opts = {}, },
         { "mason-org/mason-lspconfig.nvim", opts = {}, },
         -- { "stevearc/conform.nvim", opts = {} },
+        dependencies = {
+            "folke/lazydev.nvim",
+            ft = "lua", -- only load on lua files
+            opts = {
+                library = {
+                    -- See the configuration section for more details
+                    -- Load luvit types when the `vim.uv` word is found
+                    { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+                },
+            },
+        },
+
+        -- { "stevearc/conform.nvim", opts = {} },
         -- { "j-hui/fidget.nvim", opts = {} },
 
         -- cmp stuff [AUTOCOMPLETION]
@@ -21,6 +34,19 @@ return {
             vim.lsp.enable('phpactor')
             -- vim.lsp.config('phpactor', { workspace_required = false })
 
+            vim.lsp.config('phpactor', {
+
+                -- root_dir = function()
+                --     return "/wamp64/"
+                -- end,
+                --
+                -- on_new_config = function(config, root_dir)
+                --     config.cmd_cwd = root_dir
+                --     config.cmd_env = vim.fn.environ()
+                --     config.root_uri = "file://" .. root_dir  -- Set the root URI
+                -- end,
+
+            })
             vim.diagnostic.config({
                 -- update_in_insert = true,
                 float = {

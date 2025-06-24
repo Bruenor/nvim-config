@@ -10,8 +10,5 @@ return {
             -- Autoinstall languages that are not installed
             auto_install = true,
         },
-        -- config = function ()
-        --     require'nvim-treesitter'.install({ 'html', 'javascript', 'css', 'php' })
-        -- end
     }
 }
