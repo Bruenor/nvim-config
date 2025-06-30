@@ -1,0 +1,8 @@
+return {
+    'mbbill/undotree',
+
+    config = function()
+        vim.keymap.set('n', '<leader><F5>', vim.cmd.UndotreeToggle)
+        vim.g.undotree_DiffCommand = "FC" -- windows compatibility
+    end
+}
