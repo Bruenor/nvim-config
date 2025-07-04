@@ -22,7 +22,7 @@ require("lazy").setup({
   spec = {
     { import = "jaka.lazy" },
   },
-  change_detection = { notify = true },
+  change_detection = { notify = false },
   install = { colorscheme = { "habamax" } },
   checker = { enabled = true },
 })

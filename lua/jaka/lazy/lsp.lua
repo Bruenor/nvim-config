@@ -17,16 +17,9 @@ return {
             'saghen/blink.cmp',
         },
         config = function()
-            --  This function gets run when an LSP attaches to a particular buffer.
-            --    That is to say, every time a new file is opened that is associated with
-            --    an lsp (for example, opening `main.rs` is associated with `rust_analyzer`) this
-            --    function will be executed to configure the current buffer
             vim.api.nvim_create_autocmd('LspAttach', {
                 group = vim.api.nvim_create_augroup('kickstart-lsp-attach', { clear = true }),
                 callback = function(event)
-                    -- NOTE: Remember that Lua is a real programming language, and as such it is possible
-                    -- to define small helper and utility functions so you don't have to repeat yourself.
-                    --
                     -- In this case, we create a function that lets us more easily define mappings specific
                     -- for LSP related items. It sets the mode, buffer and description for us each time.
                     local map = function(keys, func, desc, mode)
@@ -167,6 +160,7 @@ return {
             local servers = {
                 phpactor = {},
                 ltex_plus = {},
+                -- phpactor = {},
                 -- pyright = {},
                 -- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
                 --

@@ -22,3 +22,6 @@ vim.api.nvim_create_autocmd({"BufWritePre"}, {
 })
 
 
+vim.api.nvim_create_user_command('ColorizerSetup', function()
+  require'colorizer'.setup()
+end, {})

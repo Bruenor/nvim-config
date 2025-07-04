@@ -1,5 +1,5 @@
 --   primagen
-    dependencies = {
+dependencies = {
         "stevearc/conform.nvim",
         "williamboman/mason.nvim",
         "williamboman/mason-lspconfig.nvim",
@@ -14,7 +14,7 @@
     },
 
 -- teej
-local dependencies = {
+dependencies2 == {
     "stevearc/conform.nvim",
     "williamboman/mason.nvim",
     "williamboman/mason-lspconfig.nvim",
@@ -23,4 +23,5 @@ local dependencies = {
     { "j-hui/fidget.nvim", opts = {} },
     { "https://git.sr.ht/~whynothugo/lsp_lines.nvim" },
     { "elixir-tools/elixir-tools.nvim" },
-    "b0o/SchemaStore.nvim",
+    "b0o/SchemaStore.nvim"
+}
