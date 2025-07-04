@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+vim.g.maplocaleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 --move selected lines up or down
